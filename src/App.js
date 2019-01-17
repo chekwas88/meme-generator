@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import Navbar from './components/Navbar';
-import Maincontent from './components/Maincontent';
+import Header from './components/Header';
+import MemeGenerator from './components/MemeGenerator';
 import Footer from './components/Footer';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
-        <Maincontent />
+        <Header />
+        <MemeGenerator />
         <Footer />
       </div>
     );
