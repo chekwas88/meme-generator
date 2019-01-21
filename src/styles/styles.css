@@ -22,7 +22,7 @@ header > img {
 }
 
 header > p {
-    font-family: VT323, monospace;
+    font-family: monospace;
     color: whitesmoke;
     font-size: 50px;
     margin-left: 60px;
@@ -30,24 +30,26 @@ header > p {
 
 .meme {
     position: relative;
-    width: 90%;
-    margin: auto;
+    width: 60%;
+    margin: 0 auto; 
 }
 
 .meme > img {
     width: 100%;
+    height: auto;
+    margin: 10px auto;
 }
 
 .meme > h2 {
     position: absolute;
-    width: 80%;
     text-align: center;
+    width: 40%;
     left: 50%;
     transform: translateX(-50%);
     margin: 15px 0;
     padding: 0 5px;
     font-family: impact, sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     text-transform: uppercase;
     color: white;
     letter-spacing: 1px;
@@ -74,18 +76,19 @@ header > p {
 .meme-form {
     width: 90%;
     margin: 20px auto;
-    display: flex;
-    justify-content: space-between;
 }
 
 .meme-form > input {
     width: 45%;
     height: 40px;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .meme-form > button {
     border: none;
-    font-family: VT323, monospace;
+    border-radius: 2px;
+    font-family: monospace;
     font-size: 25px;
     letter-spacing: 1.5px;
     color: white;
@@ -93,22 +96,22 @@ header > p {
 }
 
 .meme-form > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-family: VT323, monospace;
+  font-family: monospace;
   font-size: 25px;
   text-align: cen
 }
 .meme-form > input::-moz-placeholder { /* Firefox 19+ */
-  font-family: VT323, monospace;
+  font-family: monospace;
   font-size: 25px;
   text-align: cen
 }
 .meme-form > input:-ms-input-placeholder { /* IE 10+ */
-  font-family: VT323, monospace;
+  font-family: monospace;
   font-size: 25px;
   text-align: cen
 }
 .meme-form > input:-moz-placeholder { /* Firefox 18- */
-  font-family: VT323, monospace;
+  font-family: monospace;
   font-size: 25px;
   text-align: cen
 }
@@ -125,4 +128,19 @@ header > p {
 }
 .copyright{
     padding: 10px
+}
+
+@media (min-width: 650px) {
+   
+    .meme-form {
+        display: flex;
+        justify-content: space-around;
+        padding: 5px;
+    }
+    .meme-form > input {
+        margin: 5px;
+    }
+    .meme-form > button {
+        margin: 5px;
+    }
 }
